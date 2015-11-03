@@ -1,0 +1,18 @@
+{
+  "name": "userauth-server",
+  "version": "1.0.0",
+  "description": "Server side of user authentication project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Win Wu <win.wu@skilltrellis.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jsonwebtoken": "^5.4.1",
+    "mongoose": "^4.2.3"
+  }
+}
