@@ -4,7 +4,7 @@ var jwt = require('jsonwebtoken');
 var Account = require('../models/account.model');
 var secret = require('../../config/secret');
 
-var create = function(req, res) {
+var register = function(req, res) {
     bcrypt.genSalt(10, function(err, salt) {
         if (err) {
             res.json({error: err.message});

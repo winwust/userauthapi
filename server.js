@@ -5,11 +5,10 @@ var bodyParser = require('body-parser');
 var app = express();
  
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('../client'));
 
-app.use('/accounts', require('./auth/routes/account.routes'));
+app.use('/accounts', require('./authenticate/routes/account.routes'));
 
-app.use('/api', require('./auth/utils/account.verify'));
+app.use('/api', require('./authenticate/utils/account.verify'));
 app.use('/api', require('./api/dispatcher/server.dispatcher'));
 
 mongoose.connection
