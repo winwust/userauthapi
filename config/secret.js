@@ -5,14 +5,14 @@ var publicKey = null;
 
 var getTokenPrivateKey = function() {
     if (!privateKey) {
-        privateKey = fs.readFileSync('./config/https/private.pem');
+        privateKey = fs.readFileSync('./config/rsa/private.pem');
     }
     return privateKey;
 };
 
 var getTokenPublicKey = function() {
     if (!publicKey) {
-        publicKey = fs.readFileSync('./config/https/public.pem');         
+        publicKey = fs.readFileSync('./config/rsa/public.pem');         
     }
     return publicKey;
 };

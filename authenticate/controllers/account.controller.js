@@ -69,6 +69,6 @@ var authenticate = function(req, res) {
 };
 
 module.exports = {
-    create: create,
+    register: register,
     authenticate: authenticate
 };
